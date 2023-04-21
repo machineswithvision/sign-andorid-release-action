@@ -24,5 +24,5 @@ outputs:
   signedReleaseFile:
     description: 'The signed release APK or AAB file'
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'lib/main.js'
