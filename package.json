@@ -33,5 +33,12 @@
     "jest-circus": "^26.6.3",
     "ts-jest": "^26.4.4",
     "typescript": "^3.9.7"
+  },
+  "bugs": {
+    "url": "https://github.com/r0adkll/sign-android-release/issues"
+  },
+  "homepage": "https://github.com/r0adkll/sign-android-release#readme",
+  "directories": {
+    "lib": "lib"
   }
 }
