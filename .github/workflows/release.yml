@@ -7,7 +7,7 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     name: Test action
 
     steps:
@@ -31,6 +31,9 @@ jobs:
           alias: test_key
           keyStorePassword: android
           keyPassword: android
+        env:
+          # override default build-tools version (29.0.3) -- optional
+          BUILD_TOOLS_VERSION: "34.0.0"   
 
       - uses: ./
         name: Sign AAB
