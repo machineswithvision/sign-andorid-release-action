@@ -11,7 +11,7 @@ jobs:
     name: Test action
 
     steps:
-      - uses: actions/checkout@v3.1.0
+      - uses: actions/checkout@v4
         name: Checkout code
 
       - name: Run tests
@@ -43,6 +43,9 @@ jobs:
           alias: test_key
           keyStorePassword: android
           keyPassword: android
+        env:
+          # override default build-tools version (29.0.3) -- optional
+          BUILD_TOOLS_VERSION: "34.0.0"           
 
   release:
     needs: test
